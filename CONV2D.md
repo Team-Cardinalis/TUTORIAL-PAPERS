@@ -49,9 +49,21 @@ The role of the stride and padding is essential in controlling both the resoluti
 
 #### OUTPUT DIMENSION CALCULATION
 
-In Convolutional Neural Networks, it is crucial to compute the dimensions of the output feature map resulting from the convolution operation. This computation ensures that the network architecture is correctly designed and that the spatial structure of the data is maintained or intentionally altered as needed. The output height and width are determined by four main parameters
+In Convolutional Neural Networks, it is crucial to compute the dimensions of the output feature map resulting from the convolution operation. This computation ensures that the network architecture is correctly designed and that the spatial structure of the data is maintained or intentionally altered as needed. The output height and width are determined by four main parameters:
 
-\*Equation\*
+<br>
+
+$$H_{out} = \frac{H_{in} + 2p - d \cdot (K_h - 1) - 1}{s} + 1$$  
+$$W_{out} = \frac{W_{in} + 2p - d \cdot (K_w - 1) - 1}{s} + 1$$
+
+<br>
+
+- \(H_{in}\), \(W_{in}\): Height and width of the input feature map  
+- \(H_{out}\), \(W_{out}\): Height and width of the output feature map  
+- \(K_h\), \(K_w\): Height and width of the kernel  
+- \(s\): Stride  
+- \(p\): Padding  
+- \(d\): Dilation  
 
 <br>
 
