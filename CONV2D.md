@@ -53,8 +53,16 @@ In Convolutional Neural Networks, it is crucial to compute the dimensions of the
 
 <br>
 
-$$H_{out} = \frac{H_{in} + 2p - d \cdot (K_h - 1) - 1}{s} + 1$$  
-$$W_{out} = \frac{W_{in} + 2p - d \cdot (K_w - 1) - 1}{s} + 1$$
+<div style="font-size: 1.2em;">
+
+$$
+H_{out} = \frac{H_{in} + 2p - d \cdot (K_h - 1) - 1}{s} + 1
+$$  
+$$
+W_{out} = \frac{W_{in} + 2p - d \cdot (K_w - 1) - 1}{s} + 1
+$$
+
+</div>
 
 <br>
 
