@@ -32,7 +32,12 @@ In a Convolutional Neural Network, the convolution operation is the fundamental 
 
 The mathematical formulation of this operation is given by :
 
-$\displaystyle O(i,j) = \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1} I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)$
+
+$$
+O(i,j)
+= \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1}
+  I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+$$
 
 - I denotes the input feature map  
 - K represents the convolution kernel of dimensions KhKw   
