@@ -4,11 +4,13 @@
 
 2D convolution underlies convolutional neural network architectures in computer vision. This tutorial, aimed at beginners in deep learning and computer vision, provides a comprehensive presentation from the mathematical foundations of the operation through practical implementation and optimization in PyTorch. We systematically examine key parameters such as stride, padding and dilation and elucidate their effects through annotated code examples and visualizations before and after convolution. Upon completing this tutorial, readers will be able to design and configure their own Conv2D layers and justify hyperparameter choices for use cases ranging from edge detection to image classification.
 
-# **INTRODUCTION**
+### **INTRODUCTION**
 
 This tutorial paper provides a comprehensive introduction to the Conv2D layer, a core component of Convolutional Neural Networks (CNNs), with a focus on its mathematical foundation, configuration parameters, and role in feature extraction for computer vision tasks.
 
-# **CONFIGURATION**
+<br>
+
+### **CONFIGURATION**
 
 | Parameter | Description |
 | :---- | :---- |
@@ -20,7 +22,9 @@ This tutorial paper provides a comprehensive introduction to the Conv2D layer, a
 | dilation | Spacing between elements within the kernel to expand the receptive field. |
 | bias | Indicates whether a learnable bias is added to the output. |
 
-# **CONVOLUTION OPERATION**
+<br>
+
+### **CONVOLUTION OPERATION**
 
 In a Convolutional Neural Network, the convolution operation is the fundamental mechanism by which local features are extracted from input data. In this process, a kernel (or filter) of fixed dimensions is systematically applied to the input feature map by moving it across spatial positions. For each location (i,j) in the output feature map, the convolution operation computes a weighted sum of the values in the receptive field of the input. This is achieved by aligning the kernel with a corresponding patch of the input, performing an element-wise multiplication between the kernel weights and the input values, and summing the results.
 
