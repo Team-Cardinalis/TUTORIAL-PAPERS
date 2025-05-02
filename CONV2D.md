@@ -1,6 +1,6 @@
-**CONV2D**
+# **CONV2D**
 
-**ABSTRACT**
+### **ABSTRACT**
 
 2D convolution underlies convolutional neural network architectures in computer vision. This tutorial, aimed at beginners in deep learning and computer vision, provides a comprehensive presentation from the mathematical foundations of the operation through practical implementation and optimization in PyTorch. We systematically examine key parameters such as stride, padding and dilation and elucidate their effects through annotated code examples and visualizations before and after convolution. Upon completing this tutorial, readers will be able to design and configure their own Conv2D layers and justify hyperparameter choices for use cases ranging from edge detection to image classification.
 
@@ -26,7 +26,7 @@ In a Convolutional Neural Network, the convolution operation is the fundamental 
 
 The mathematical formulation of this operation is given by :
 
-O(i,j)=m=0Kh-1n=0Kw-1I(is \+ m \-p,j s \+ n \- p) K(m,n)
+$\displaystyle O(i,j) = \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1} I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)$
 
 - I denotes the input feature map  
 - K represents the convolution kernel of dimensions KhKw   
