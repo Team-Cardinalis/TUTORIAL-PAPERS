@@ -213,8 +213,17 @@ $$
       if (!choice) {
         feedback.textContent = 'Veuillez sélectionner une réponse.';
         feedback.style.color = 'orange';
-      } else if (choice
-
+      } else if (choice === 'Paris') {
+        feedback.textContent = '👍 Correct !';
+        feedback.style.color = 'green';
+      } else {
+        feedback.textContent = '❌ Incorrect. La bonne réponse est Paris.';
+        feedback.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>
 
 #### SOURCES
 
