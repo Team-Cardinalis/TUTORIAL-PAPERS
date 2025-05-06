@@ -49,20 +49,22 @@ The role of the stride and padding is essential in controlling both the resoluti
 
 #### VISUAL EXAMPLES
 
-Below are the results of applying three classic edge-detection kernels to the same grayscale input image:
+To illustrate how convolutional filters uncover image structure, we apply three edge detectors to the same grayscale input. The Sobel X kernel approximates the horizontal intensity derivative, causing vertical features to stand out. The Sobel Y kernel approximates the vertical derivative, making horizontal transitions more visible. The Laplacian kernel computes the second derivative of intensity and highlights every edge irrespective of orientation. In each example you will see the input image on the left, the kernel visualization in the center, and the resulting feature map on the right.
+
+<br>
 
 ![Sobel X output](conv_sobel_x.png)  
-*Figure 1: **Sobel X** – highlights **vertical** edges by computing horizontal gradients.*
+<sub>Figure 1: **Sobel X** - vertical edges.</sub>
 
 <br>
 
 ![Sobel Y output](conv_sobel_y.png)  
-*Figure 2: **Sobel Y** – highlights **horizontal** edges by computing vertical gradients.*
+<sub>Figure 2 : **Sobel Y** - horizontal edges.</sub>
 
 <br>
 
 ![Laplacian output](conv_laplacian.png)  
-<sub>Figure 3: **Laplacian** – all edges.</sub>
+<sub>Figure 3 : **Laplacian** - all edges.</sub>
 
 ---
 
