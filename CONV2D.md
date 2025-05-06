@@ -123,6 +123,29 @@ $$
 
 <br>
 
+<form>
+  <p><strong>Quiz :</strong> Quel paramètre contrôle l’espacement entre les éléments à l’intérieur du noyau (kernel) d’une couche Conv2D ?</p>
+
+  <input type="radio" id="q1a" name="quiz" value="stride">
+  <label for="q1a">A) Stride</label><br>
+
+  <input type="radio" id="q1b" name="quiz" value="padding">
+  <label for="q1b">B) Padding</label><br>
+
+  <input type="radio" id="q1c" name="quiz" value="dilation">
+  <label for="q1c">C) Dilation</label><br><br>
+
+  <button type="button" onclick="document.getElementById('answer').style.display='block'">
+    Vérifier
+  </button>
+</form>
+
+<div id="answer" style="display:none; margin-top:1em; padding:0.5em; border:1px solid #ccc;">
+  <strong>Réponse :</strong> C) Dilation<br>
+  <em>La dilation (« espacement ») élargit la zone couverte par le kernel sans augmenter sa taille en mémoire.</em>
+</div>
+
+
 #### SELF ASSESSMENT
 
 <br>
