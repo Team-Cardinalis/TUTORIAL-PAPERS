@@ -6,6 +6,14 @@
 
 <br>
 
+3. What are the test automation frameworks developed by MaxSoft?
+    - [ ] IntelliAPI
+    - [ ] WebBot
+    - [ ] Gauge
+    - [ ] Selenium
+
+>!This is hidden until your cursor hovers on top of it
+
 #### INTRODUCTION
 
 This tutorial paper provides a comprehensive introduction to the Conv2D layer, a core component of Convolutional Neural Networks (CNNs), with a focus on its mathematical foundation, configuration parameters, and role in feature extraction for computer vision tasks.
