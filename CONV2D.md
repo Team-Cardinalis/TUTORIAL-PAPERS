@@ -62,7 +62,7 @@ Below are the results of applying three classic edge-detection kernels to the sa
 <br>
 
 ![Laplacian output](conv_laplacian.png)  
-<small>Figure 3: **Laplacian** – all edges.</small>
+<sub>Figure 3: **Laplacian** – all edges.</sub>
 
 ---
 
