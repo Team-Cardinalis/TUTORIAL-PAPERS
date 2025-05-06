@@ -45,6 +45,10 @@ $$O(i,j)= \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1}I\bigl(i\,s + m - p,\; j\,s + n - 
 
 The role of the stride and padding is essential in controlling both the resolution of the output feature map and the preservation of spatial information at the edges of the input. This equation encapsulates the local aggregation process, thereby enabling the network to build up complex representations by hierarchically combining simple features detected in the early layers.
 
+![Sobel X output](conv_sobel_x.png)
+![Sobel Y output](conv_sobel_y.png)
+![Laplacian output](conv_laplacian.png)
+
 <br>
 
 #### OUTPUT DIMENSION CALCULATION
