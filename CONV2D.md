@@ -14,15 +14,15 @@ This tutorial paper provides a comprehensive introduction to the Conv2D layer, a
 
 #### CONFIGURATION
 
-| Parameter | Description |
-| :---- | :---- |
-| in\_channels | Number of channels in the input image. |
-| out\_channels | Number of output feature maps produced by the convolutional layer. |
-| kernel\_size | Dimensions of the convolutional filter applied to the input. |
-| stride | Step size that determines how the filter moves across the input. |
-| padding | Number of pixels added around the input to control the output size. |
-| dilation | Spacing between elements within the kernel to expand the receptive field. |
-| bias | Indicates whether a learnable bias is added to the output. |
+| Parameter    | Description                                                           | Too high effect                                         | Too low effect                                                          |
+| :----------- | :-------------------------------------------------------------------- | :------------------------------------------------------ | :---------------------------------------------------------------------- |
+| in_channels  | Number of channels in the input image.                                | Risk of overfitting and unnecessary complexity.         | Insufficient feature extraction.                                        |
+| out_channels | Number of output feature maps produced by the convolutional layer.      | Increased computational cost and overparameterization.  | Reduced feature extraction capacity.                                    |
+| kernel_size  | Dimensions of the convolutional filter applied to the input.          | Loss of local details and excessive processing.         | Risk of undercapturing local patterns.                                  |
+| stride       | Step size that determines how the filter moves across the input.        | Undersampled output with loss of spatial information.   | Redundant outputs and over-decomposition.                               |
+| padding      | Number of pixels added around the input to control the output size.     | Introduction of artifacts and edge distortion.          | Loss of border information.                                             |
+| dilation     | Spacing between elements within the kernel to expand the receptive field.| Dilutes local relationships, reducing precision.        | Reduced receptive field, limiting context capture.                      |
+| bias         | Indicates whether a learnable bias is added to the output.              | May lead to overcorrection due to excessive adjustment.  | Lack of flexibility in adjusting the model.                             |
 
 <br>
 
@@ -38,10 +38,10 @@ $$O(i,j)= \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1}I\bigl(i\,s + m - p,\; j\,s + n - 
 
 <br>
 
-- I denotes the input feature map  
-- K represents the convolution kernel of dimensions KhKw   
-- s is the stride, which dictates the step size for sliding the kernel over the input  
-- p corresponds to the amount of zero-padding added to the input border
+- $I$ denotes the input feature map  
+- $K$ represents the convolution kernel of dimensions $K_h \times K_w$   
+- $s$ is the stride, which dictates the step size for sliding the kernel over the input  
+- $p$ corresponds to the amount of zero-padding added to the input border
 
 The role of the stride and padding is essential in controlling both the resolution of the output feature map and the preservation of spatial information at the edges of the input. This equation encapsulates the local aggregation process, thereby enabling the network to build up complex representations by hierarchically combining simple features detected in the early layers.
 
@@ -71,9 +71,63 @@ $$
 
 <br>
 
+#### MULTI-CHANNEL CONVOLUTION
+
+In multi-channel convolution, each filter is applied to every input channel. The outputs are summed across channels to produce each output feature map. For an input with \(C_{in}\) channels, the operation is given by:
+
+<br>
+
+$$
+O(i,j) = \sum_{c=1}^{C_{in}} \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1} I_c(i\,s + m - p,\; j\,s + n - p)\;K_c(m,n)
+$$
+
+<br>
+
+#### BIAS
+
+After convolution, a learnable bias is added to each output channel. This allows the output to be shifted and is computed as:
+
+<br>
+
+$$
+O(i,j) = \left( \sum_{c=1}^{C_{in}} \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1} I_c(i\,s + m - p,\; j\,s + n - p)\;K_c(m,n) \right) + b
+$$
+
+<br>
+
+#### BACKPROPAGATION
+
+Backpropagation computes the gradients of the loss function with respect to each parameter using the chain rule. In convolutional layers, error gradients are propagated by convolving the gradient of the output with rotated filters.
+
+<br>
+
+#### GRADIENT
+
+The gradient with respect to the weights is given by:
+
+<br>
+
+$$
+\frac{\partial L}{\partial K_c(m,n)} = \sum_{i,j} \frac{\partial L}{\partial O(i,j)} \cdot I_c(i\,s + m - p,\; j\,s + n - p)
+$$
+
+<br>
+
+The gradient with respect to the bias is computed as:
+
+<br>
+
+$$
+\frac{\partial L}{\partial b} = \sum_{i,j} \frac{\partial L}{\partial O(i,j)}
+$$
+
+<br>
+
 #### SOURCES
 
-https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html
+- https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html
+- https://www.geeksforgeeks.org/backpropagation-in-convolutional-neural-networks/
+- https://www.quarkml.com/2023/07/backward-pass-in-convolutional-neural-network-explained.html
 
 <br>
 
