@@ -6,6 +6,10 @@
 
 <br>
 
+---
+
+<br>
+
 #### INTRODUCTION
 
 This tutorial paper provides a comprehensive introduction to the Conv2D layer, a core component of Convolutional Neural Networks (CNNs), with a focus on its mathematical foundation, configuration parameters, and role in feature extraction for computer vision tasks.
