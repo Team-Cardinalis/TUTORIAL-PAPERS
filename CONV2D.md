@@ -6,15 +6,11 @@
 
 <br>
 
----
-
 #### INTRODUCTION
 
 This tutorial paper provides a comprehensive introduction to the Conv2D layer, a core component of Convolutional Neural Networks (CNNs), with a focus on its mathematical foundation, configuration parameters, and role in feature extraction for computer vision tasks.
 
 <br>
-
----
 
 #### CONFIGURATION
 
@@ -51,7 +47,7 @@ The role of the stride and padding is essential in controlling both the resoluti
 
 ---
 
-**Visual Examples**
+#### VISUAL EXAMPLES
 
 Below are the results of applying three classic edge-detection kernels to the same grayscale input image:
 
