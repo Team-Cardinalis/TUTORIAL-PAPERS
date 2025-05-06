@@ -62,7 +62,9 @@ Below are the results of applying three classic edge-detection kernels to the sa
 <br>
 
 ![Laplacian output](conv_laplacian.png)  
-*Figure 3: **Laplacian** – computes the second-order derivative, accentuating **all** edges regardless of orientation.*
+  <figcaption style="font-size:0.8em; text-align:center;">
+    Figure 3: <strong>Laplacian</strong> – all edges.
+  </figcaption>
 
 ---
 
