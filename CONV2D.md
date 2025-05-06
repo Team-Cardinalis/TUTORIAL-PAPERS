@@ -125,17 +125,17 @@ $$
 
 #### SELF ASSESSMENT
 
+<br>
+
 1. MaxSoft is a software company.
     - (x) True
     - ( ) False
 
-<br>
+---
 
 2. The domain of MaxSoft is test automation framework development.
     - (x) True
     - ( ) False
-
-<br>
 
 ---
 
@@ -153,6 +153,68 @@ $$
 > </details>
 
 <br>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Simple</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 50px auto;
+    }
+    .quiz-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .quiz-container h2 {
+      margin-top: 0;
+    }
+    .feedback {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>Quiz</h2>
+    <form id="quizForm">
+      <p>Quelle est la capitale de la France ?</p>
+      <label>
+        <input type="radio" name="q1" value="Paris">
+        Paris
+      </label><br>
+      <label>
+        <input type="radio" name="q1" value="Lyon">
+        Lyon
+      </label><br>
+      <label>
+        <input type="radio" name="q1" value="Marseille">
+        Marseille
+      </label><br>
+      <label>
+        <input type="radio" name="q1" value="Bordeaux">
+        Bordeaux
+      </label><br><br>
+      <button type="button" onclick="checkAnswer()">Valider</button>
+    </form>
+    <div id="feedback" class="feedback"></div>
+  </div>
+
+  <script>
+    function checkAnswer() {
+      const form = document.getElementById('quizForm');
+      const choice = form.q1.value;
+      const feedback = document.getElementById('feedback');
+      if (!choice) {
+        feedback.textContent = 'Veuillez sélectionner une réponse.';
+        feedback.style.color = 'orange';
+      } else if (choice
+
 
 #### SOURCES
 
