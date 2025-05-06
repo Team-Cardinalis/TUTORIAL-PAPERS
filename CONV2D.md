@@ -1,20 +1,16 @@
-### ABSTRACT
+## ABSTRACT
 
 2D convolution underlies convolutional neural network architectures in computer vision. This tutorial, aimed at beginners in deep learning and computer vision, provides a comprehensive presentation from the mathematical foundations of the operation through practical implementation and optimization in PyTorch. We systematically examine key parameters such as stride, padding and dilation and elucidate their effects through annotated code examples and visualizations before and after convolution. Upon completing this tutorial, readers will be able to design and configure their own Conv2D layers and justify hyperparameter choices for use cases ranging from edge detection to image classification.
 
 <br>
 
----
-
-#### INTRODUCTION
+## INTRODUCTION
 
 This tutorial paper provides a comprehensive introduction to the Conv2D layer, a core component of Convolutional Neural Networks (CNNs), with a focus on its mathematical foundation, configuration parameters, and role in feature extraction for computer vision tasks.
 
 <br>
 
----
-
-#### CONFIGURATION
+## CONFIGURATION
 
 | Parameter    | Description                                                           | Too high effect                                         | Too low effect                                                          |
 | :----------- | :-------------------------------------------------------------------- | :------------------------------------------------------ | :---------------------------------------------------------------------- |
@@ -28,9 +24,7 @@ This tutorial paper provides a comprehensive introduction to the Conv2D layer, a
 
 <br>
 
----
-
-#### CONVOLUTION OPERATION
+## CONVOLUTION OPERATION
 
 In a Convolutional Neural Network, the convolution operation is the fundamental mechanism by which local features are extracted from input data. In this process, a kernel (or filter) of fixed dimensions is systematically applied to the input feature map by moving it across spatial positions. For each location (i,j) in the output feature map, the convolution operation computes a weighted sum of the values in the receptive field of the input. This is achieved by aligning the kernel with a corresponding patch of the input, performing an element-wise multiplication between the kernel weights and the input values, and summing the results.
 
@@ -72,9 +66,7 @@ To illustrate how convolutional filters uncover image structure, we apply three 
 
 <br>
 
----
-
-#### OUTPUT DIMENSION CALCULATION
+## OUTPUT DIMENSION CALCULATION
 
 In Convolutional Neural Networks, it is crucial to compute the dimensions of the output feature map resulting from the convolution operation. This computation ensures that the network architecture is correctly designed and that the spatial structure of the data is maintained or intentionally altered as needed. The output height and width are determined by four main parameters:
 
@@ -98,7 +90,7 @@ $$
 
 <br>
 
-#### MULTI-CHANNEL CONVOLUTION
+## MULTI-CHANNEL CONVOLUTION
 
 In multi-channel convolution, each filter is applied to every input channel. The outputs are summed across channels to produce each output feature map. For an input with \(C_{in}\) channels, the operation is given by:
 
@@ -110,7 +102,7 @@ $$
 
 <br>
 
-#### BIAS
+## BIAS
 
 After convolution, a learnable bias is added to each output channel. This allows the output to be shifted and is computed as:
 
@@ -122,13 +114,13 @@ $$
 
 <br>
 
-#### BACKPROPAGATION
+## BACKPROPAGATION
 
 Backpropagation computes the gradients of the loss function with respect to each parameter using the chain rule. In convolutional layers, error gradients are propagated by convolving the gradient of the output with rotated filters.
 
 <br>
 
-#### GRADIENT
+## GRADIENT
 
 The gradient with respect to the weights is given by:
 
@@ -150,7 +142,7 @@ $$
 
 <br>
 
-#### SOURCES
+## SOURCES
 
 - https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html
 - https://www.geeksforgeeks.org/backpropagation-in-convolutional-neural-networks/
@@ -158,7 +150,7 @@ $$
 
 <br>
 
-#### CONTRIBUTORS
+## CONTRIBUTORS
 
 Sasha MARMAIN  
 Killian OTT
