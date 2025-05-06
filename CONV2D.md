@@ -66,6 +66,8 @@ To illustrate how convolutional filters uncover image structure, we apply three 
 ![Laplacian output](conv_laplacian.png)  
 <sub>Figure 3 : **Laplacian** - all edges.</sub>
 
+<br>
+
 ---
 
 #### OUTPUT DIMENSION CALCULATION
