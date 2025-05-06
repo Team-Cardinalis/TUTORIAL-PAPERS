@@ -26,6 +26,8 @@ This tutorial paper provides a comprehensive introduction to the Conv2D layer, a
 
 <br>
 
+---
+
 #### CONVOLUTION OPERATION
 
 In a Convolutional Neural Network, the convolution operation is the fundamental mechanism by which local features are extracted from input data. In this process, a kernel (or filter) of fixed dimensions is systematically applied to the input feature map by moving it across spatial positions. For each location (i,j) in the output feature map, the convolution operation computes a weighted sum of the values in the receptive field of the input. This is achieved by aligning the kernel with a corresponding patch of the input, performing an element-wise multiplication between the kernel weights and the input values, and summing the results.
