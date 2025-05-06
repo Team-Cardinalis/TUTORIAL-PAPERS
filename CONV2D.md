@@ -45,11 +45,26 @@ $$O(i,j)= \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1}I\bigl(i\,s + m - p,\; j\,s + n - 
 
 The role of the stride and padding is essential in controlling both the resolution of the output feature map and the preservation of spatial information at the edges of the input. This equation encapsulates the local aggregation process, thereby enabling the network to build up complex representations by hierarchically combining simple features detected in the early layers.
 
-![Sobel X output](conv_sobel_x.png)
-![Sobel Y output](conv_sobel_y.png)
-![Laplacian output](conv_laplacian.png)
+---
+
+**Visual Examples**
+
+Below are the results of applying three classic edge-detection kernels to the same grayscale input image:
+
+![Sobel X output](conv_sobel_x.png)  
+*Figure 1: **Sobel X** – highlights **vertical** edges by computing horizontal gradients.*
 
 <br>
+
+![Sobel Y output](conv_sobel_y.png)  
+*Figure 2: **Sobel Y** – highlights **horizontal** edges by computing vertical gradients.*
+
+<br>
+
+![Laplacian output](conv_laplacian.png)  
+*Figure 3: **Laplacian** – computes the second-order derivative, accentuating **all** edges regardless of orientation.*
+
+---
 
 #### OUTPUT DIMENSION CALCULATION
 
