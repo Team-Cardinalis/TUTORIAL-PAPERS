@@ -14,6 +14,8 @@ This tutorial paper provides a comprehensive introduction to the Conv2D layer, a
 
 <br>
 
+---
+
 #### CONFIGURATION
 
 | Parameter    | Description                                                           | Too high effect                                         | Too low effect                                                          |
