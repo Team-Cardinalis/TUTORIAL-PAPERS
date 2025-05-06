@@ -66,6 +66,38 @@ To illustrate how convolutional filters uncover image structure, we apply three 
 
 <br>
 
+<br>
+
+![Prewitt X output](conv_prewitt_x.png)  
+<sub>Figure 4 : **Prewitt X** – vertical edges.</sub>
+
+<br>
+
+![Prewitt Y output](conv_prewitt_y.png)  
+<sub>Figure 5 : **Prewitt Y** – horizontal edges.</sub>
+
+<br>
+
+![Roberts X output](conv_roberts_x.png)  
+<sub>Figure 6 : **Roberts X** – diagonal edges (↗︎ direction).</sub>
+
+<br>
+
+![Roberts Y output](conv_roberts_y.png)  
+<sub>Figure 7 : **Roberts Y** – diagonal edges (↘︎ direction).</sub>
+
+<br>
+
+![Emboss output](conv_emboss.png)  
+<sub>Figure 8 : **Emboss** – relief effect in a given direction.</sub>
+
+<br>
+
+![Laplacian of Gaussian output](conv_log.png)  
+<sub>Figure 9 : **LoG (Laplacian of Gaussian)** – combined smoothing and edge enhancement.</sub>
+
+<br>
+
 ## OUTPUT DIMENSION CALCULATION
 
 In Convolutional Neural Networks, it is crucial to compute the dimensions of the output feature map resulting from the convolution operation. This computation ensures that the network architecture is correctly designed and that the spatial structure of the data is maintained or intentionally altered as needed. The output height and width are determined by four main parameters:
