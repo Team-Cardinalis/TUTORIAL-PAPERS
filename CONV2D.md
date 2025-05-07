@@ -46,13 +46,10 @@ $$O(i,j)= \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1}I\bigl(i\,s + m - p,\; j\,s + n - 
 
 <br>
 
-> $I$ denotes the input feature map
-
-> $K$ represents the convolution kernel of dimensions $K_h \times K_w$
-
-> $s$ is the stride, which dictates the step size for sliding the kernel over the input
-
-> $p$ corresponds to the amount of zero-padding added to the input border
+- $I$ denotes the input feature map
+- $K$ represents the convolution kernel of dimensions $K_h \times K_w$
+- $s$ is the stride, which dictates the step size for sliding the kernel over the input
+- $p$ corresponds to the amount of zero-padding added to the input border
 
 <p align="justify">
 The role of the stride and padding is essential in controlling both the resolution of the output feature map and the preservation of spatial information at the edges of the input. This equation encapsulates the local aggregation process, thereby enabling the network to build up complex representations by hierarchically combining simple features detected in the early layers.
