@@ -364,8 +364,6 @@ Deep Learning an MIT Press book
 <br>
 
 Killian OTT
-> <br>
-> <br>
 > <a href="https://www.linkedin.com/in/killian-ott/">
 >  <img src="Logo/linkedin.png" alt="LinkedIn" width="20">
 > </a>
