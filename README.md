@@ -4,12 +4,20 @@
 
 # TUTORIAL-PAPERS
 
-A collection of technical notes describing key 2D neural network operations.
+A collection of technical notes describing key 2D neural network operations. As said just before, right there will be consigned our TUTORIAL-PAPERS, which aim to help AI and tech enjoyers understand this difficult process which is neural network.
+
+Trying to make a light but detailed paper. Which everyone can be able to read, and most importantly, free access to this knowledge.
+
+Each one of them will be axed on a precise filter into a neural network. Explaining to them the precise working of each one.
+
+In a second hand, we pursue our dream to enhance even more what AI reach. We aspire to push it far beyond and keep researching this gigantic field, to keep improving our capacity and knowledge
+
 
 ## Table of Contents
 
 [CONV2D.md](CONV2D.md)  
    Overview of the 2D convolution layer: principles, mathematical formulation, implementation details, and visual examples.
+  
 
 [CONVTRANSPOSE2D.md](CONVTRANSPOSE2D.md)  
    2D transposed convolution (deconvolution): mechanism, applications in generative architectures, and detailed examples.
