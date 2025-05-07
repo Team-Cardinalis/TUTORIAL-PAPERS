@@ -73,7 +73,7 @@ $$
 
 <br>
 
-![Sobel X output](conv_sobel_x.png)  
+![Sobel X output](Figures/conv2d/conv_sobel_x.png)  
 <sub>Figure 1: **Sobel X** – vertical edges.</sub>
 
 ---
