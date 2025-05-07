@@ -247,12 +247,17 @@ $$
 
 <br>
 
-- \(H_{in}\), \(W_{in}\): Height and width of the input feature map  
-- \(H_{out}\), \(W_{out}\): Height and width of the output feature map  
-- \(K_h\), \(K_w\): Height and width of the kernel  
-- \(s\): Stride  
-- \(p\): Padding  
-- \(d\): Dilation  
+- $H_{in}, W_{in}$ denote the height and width of the input feature map  
+- $H_{out}, W_{out}$ denote the height and width of the output feature map  
+- $K_h, K_w$ represent the height and width of the kernel, respectively  
+- $s$ is the stride, which dictates the step size for sliding the kernel over the input  
+- $p$ corresponds to the amount of zero-padding added to the input border  
+- $d$ is the dilation, which specifies the spacing between elements of the kernel
+
+<br>
+
+![Convolution output dimensions](Figures/conv2d/out_dim_calc/output_dimensions.png)  
+<sub>Figure 8: **Convolution Output Dimensions** - Output size of a convolution operation as a function of kernel size (k), stride (s), padding (p), and dilation (d).</sub>
 
 <br>
 
