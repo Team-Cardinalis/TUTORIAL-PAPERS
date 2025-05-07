@@ -359,6 +359,8 @@ Sasha MARMAIN
   <img src="linkedin.png" alt="LinkedIn" width="50">
 </a>
 
+<br>
+
 Killian OTT
 
 <a href="https://www.linkedin.com/in/killian-ott/">
