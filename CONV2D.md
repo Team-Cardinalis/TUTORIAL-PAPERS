@@ -326,7 +326,27 @@ $$
 
 ## SOURCES
 
-https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html
+PyTorch documentation
+> https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html
+
+<br>
+
+Tensorflow documentation
+> https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D
+
+<br>
+
+CS231n Deep Learning for Computer Vision
+> http://cs231n.github.io/convolutional-networks/
+
+> https://d2l.ai/chapter_convolutional-neural-networks/conv.html
+
+> https://www.deeplearningbook.org/
+
+> https://www.pyimagesearch.com/2015/10/05/implementing-sobel-filter-cpp-python/
+
+> https://www.digitalocean.com/community/tutorials/how-to-implement-convolutional-neural-networks-from-scratch-in-python-3
+https://arxiv.org/abs/1701.00279
 
 <br>
 
