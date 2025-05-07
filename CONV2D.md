@@ -92,7 +92,7 @@ $$
 
 <br>
 
-![Sobel Y output](conv_sobel_y.png)  
+![Sobel Y output](Figures/conv2d/conv_sobel_y.png)  
 <sub>Figure 2: **Sobel Y** – horizontal edges.</sub>
 
 ---
@@ -111,7 +111,7 @@ $$
 
 <br>
 
-![Laplacian output](conv_laplacian.png)  
+![Laplacian output](Figures/conv2d/conv_laplacian.png)  
 <sub>Figure 3: **Laplacian** – all edges.</sub>
 
 ---
@@ -130,7 +130,7 @@ $$
 
 <br>
 
-![Prewitt X output](conv_prewitt_x.png)  
+![Prewitt X output](Figures/conv2d/conv_prewitt_x.png)  
 <sub>Figure 4: **Prewitt X** – vertical edges.</sub>
 
 ---
@@ -149,7 +149,7 @@ $$
 
 <br>
 
-![Prewitt Y output](conv_prewitt_y.png)  
+![Prewitt Y output](Figures/conv2d/conv_prewitt_y.png)  
 <sub>Figure 5: **Prewitt Y** – horizontal edges.</sub>
 
 ---
@@ -167,7 +167,7 @@ $$
 
 <br>
 
-![Roberts X output](conv_roberts_x.png)  
+![Roberts X output](Figures/conv2d/conv_roberts_x.png)  
 <sub>Figure 6: **Roberts X** – diagonal edges (↗︎ direction).</sub>
 
 ---
@@ -185,7 +185,7 @@ $$
 
 <br>
 
-![Roberts Y output](conv_roberts_y.png)  
+![Roberts Y output](Figures/conv2d/conv_roberts_y.png)  
 <sub>Figure 7: **Roberts Y** – diagonal edges (↘︎ direction).</sub>
 
 ---
@@ -204,7 +204,7 @@ $$
 
 <br>
 
-![Emboss output](conv_emboss.png)  
+![Emboss output](Figures/conv2d/conv_emboss.png)  
 <sub>Figure 8: **Emboss** – relief effect in a given direction.</sub>
 
 ---
@@ -225,7 +225,7 @@ $$
 
 <br>
 
-![Laplacian of Gaussian output](conv_log.png)  
+![Laplacian of Gaussian output](Figures/conv2d/conv_log.png)  
 <sub>Figure 9: **LoG (Laplacian of Gaussian)** – combined smoothing and edge enhancement.</sub>
 
 <br>
