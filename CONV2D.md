@@ -363,7 +363,7 @@ Deep Learning an MIT Press book
 <br>
 <br>
 
-> Killian OTT
+Killian OTT
 > <br>
 > <br>
 > <a href="https://www.linkedin.com/in/killian-ott/">
