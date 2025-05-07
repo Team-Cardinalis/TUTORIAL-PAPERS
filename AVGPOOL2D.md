@@ -61,7 +61,8 @@ $$
 
 ## SOURCES
 
-Deep Learning textbooks and PyTorch/Tensorflow documentations on pooling layers.
+PyTorch documentation
+> https://pytorch.org/docs/stable/generated/torch.nn.AvgPool2d.html
 
 <br>
 
