@@ -328,6 +328,8 @@ $$
 
 https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html
 
+<br>
+
 ## CONTRIBUTORS
 
 [Sasha MARMAIN](https://www.linkedin.com/in/sasha-marmain-7a9645294/)
