@@ -23,7 +23,8 @@ A collection of technical notes describing key 2D neural network operations.
 
 ---
 
-- **Logo/**  
-![Team Cardinalis Logo](Logo/teamcardinalis.png)
+<a href="https://www.teamcardinalis.com/">
+   <img src="Logo/teamcardinalis.png" alt="Team Cardinalis" width="20">
+</a>
 
 ---
