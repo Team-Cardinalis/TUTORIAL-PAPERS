@@ -1,3 +1,7 @@
+<a href="https://www.teamcardinalis.com/">
+   <img src="Logo/teamcardinalis.png" alt="Team Cardinalis" width="100">
+</a>
+
 ## ABSTRACT
 
 <p align="justify">
