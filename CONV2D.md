@@ -62,6 +62,8 @@ To illustrate how convolutional filters uncover image structure, we apply three 
 <br>
 
 $$
+O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
 K = \begin{bmatrix}
 -1 & 0 & 1\\
 -2 & 0 & 2\\
@@ -79,6 +81,8 @@ $$
 <br>
 
 $$
+O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
 K = \begin{bmatrix}
 -1 & -2 & -1\\
 0  &  0 &  0\\
@@ -96,6 +100,8 @@ $$
 <br>
 
 $$
+O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
 K = \begin{bmatrix}
 0 & 1 & 0\\
 1 & -4 & 1\\
@@ -113,6 +119,8 @@ $$
 <br>
 
 $$
+O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
 K = \begin{bmatrix}
 -1 &  0 & 1\\
 -1 &  0 & 1\\
