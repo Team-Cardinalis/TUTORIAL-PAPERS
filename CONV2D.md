@@ -61,6 +61,8 @@ K = \begin{bmatrix}
 \end{bmatrix}
 $$
 
+<br>
+
 ![Sobel X output](conv_sobel_x.png)  
 <sub>Figure 1: **Sobel X** - vertical edges.</sub>
 
