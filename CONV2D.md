@@ -329,6 +329,12 @@ $$
 - https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html
 - https://www.geeksforgeeks.org/backpropagation-in-convolutional-neural-networks/
 - https://www.quarkml.com/2023/07/backward-pass-in-convolutional-neural-network-explained.html
+- https://cs231n.github.io/convolutional-networks/
+<sub>Stanford CS231n: Convolutional Neural Networks for Visual Recognition</sub>
+- https://www.deeplearningbook.org/                 // Deep Learning, Ian Goodfellow et al.
+- https://arxiv.org/abs/1409.1556                     // ImageNet Classification with Deep Convolutional Neural Networks
+- https://scholar.google.com/                       // Google Scholar for peer-reviewed research
+- https://ieeexplore.ieee.org/                      // IEEE Xplore Digital Library
 
 <br>
 
