@@ -51,9 +51,6 @@ To illustrate how convolutional filters uncover image structure, we apply three 
 
 <br>
 
-![Sobel X output](conv_sobel_x.png)  
-<sub>Figure 1: **Sobel X** - vertical edges.</sub>
-
 $$
 O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
 \quad\text{with}\quad
@@ -63,6 +60,9 @@ K = \begin{bmatrix}
 -1 & 0 & 1
 \end{bmatrix}
 $$
+
+![Sobel X output](conv_sobel_x.png)  
+<sub>Figure 1: **Sobel X** - vertical edges.</sub>
 
 
 <br>
