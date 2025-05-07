@@ -1,8 +1,8 @@
-# TUTORIAL-PAPERS
+<a href="https://www.teamcardinalis.com/">
+   <img src="Logo/teamcardinalis.png" alt="Team Cardinalis" width="100">
+</a># TUTORIAL-PAPERS
 
 A collection of technical notes describing key 2D neural network operations.
-
----
 
 ## Table of Contents
 
@@ -20,11 +20,3 @@ A collection of technical notes describing key 2D neural network operations.
 
 5. [ADAPTIVEMAXPOOL2D.md](ADAPTIVEMAXPOOL2D.md)  
    2D adaptive max pooling: principle of adaptive maximum selection, differences from classic max pooling, and typical implementations.
-
----
-
-<a href="https://www.teamcardinalis.com/">
-   <img src="Logo/teamcardinalis.png" alt="Team Cardinalis" width="100">
-</a>
-
----
