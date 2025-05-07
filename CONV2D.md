@@ -353,8 +353,14 @@ Deep Learning an MIT Press book
 
 ## CONTRIBUTORS
 
-[Sasha MARMAIN](https://www.linkedin.com/in/sasha-marmain-7a9645294/)
+Sasha MARMAIN
 
-![alt text](linkedin.png)
+<a href="https://www.linkedin.com/in/sasha-marmain-7a9645294/">
+  <img src="linkedin.png" alt="LinkedIn" width="50">
+</a>
 
-[Killian OTT](https://www.linkedin.com/in/killian-ott/)
+Killian OTT
+
+<a href="https://www.linkedin.com/in/killian-ott/">
+  <img src="linkedin.png" alt="LinkedIn" width="50">
+</a>
