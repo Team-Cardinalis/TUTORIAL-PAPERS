@@ -74,7 +74,7 @@ $$
 <br>
 
 ![Sobel X output](conv_sobel_x.png)  
-<sub>Figure 1: **Sobel X** - vertical edges.</sub>
+<sub>Figure 1: **Sobel X** – vertical edges.</sub>
 
 ---
 
@@ -85,53 +85,148 @@ O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K
 \quad\text{with}\quad
 K = \begin{bmatrix}
 -1 & -2 & -1\\
-0  & 0  & 0 \\
-1  & 2  & 1
+0  &  0 &  0\\
+1  &  2 &  1
 \end{bmatrix}
 $$
-
 
 <br>
 
 ![Sobel Y output](conv_sobel_y.png)  
-<sub>Figure 2 : **Sobel Y** - horizontal edges.</sub>
+<sub>Figure 2: **Sobel Y** – horizontal edges.</sub>
+
+---
+
+<br>
+
+$$
+O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
+K = \begin{bmatrix}
+0 & 1 & 0\\
+1 & -4 & 1\\
+0 & 1 & 0
+\end{bmatrix}
+$$
 
 <br>
 
 ![Laplacian output](conv_laplacian.png)  
-<sub>Figure 3 : **Laplacian** - all edges.</sub>
+<sub>Figure 3: **Laplacian** – all edges.</sub>
+
+---
 
 <br>
+
+$$
+O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
+K = \begin{bmatrix}
+-1 &  0 & 1\\
+-1 &  0 & 1\\
+-1 &  0 & 1
+\end{bmatrix}
+$$
 
 <br>
 
 ![Prewitt X output](conv_prewitt_x.png)  
-<sub>Figure 4 : **Prewitt X** - vertical edges.</sub>
+<sub>Figure 4: **Prewitt X** – vertical edges.</sub>
+
+---
+
+<br>
+
+$$
+O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
+K = \begin{bmatrix}
+-1 & -1 & -1\\
+ 0 &  0 &  0\\
+ 1 &  1 &  1
+\end{bmatrix}
+$$
 
 <br>
 
 ![Prewitt Y output](conv_prewitt_y.png)  
-<sub>Figure 5 : **Prewitt Y** - horizontal edges.</sub>
+<sub>Figure 5: **Prewitt Y** – horizontal edges.</sub>
+
+---
+
+<br>
+
+$$
+O(i,j)= \sum_{m=0}^{1}\sum_{n=0}^{1}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
+K = \begin{bmatrix}
+1 &  0\\
+0 & -1
+\end{bmatrix}
+$$
 
 <br>
 
 ![Roberts X output](conv_roberts_x.png)  
-<sub>Figure 6 : **Roberts X** - diagonal edges (↗︎ direction).</sub>
+<sub>Figure 6: **Roberts X** – diagonal edges (↗︎ direction).</sub>
+
+---
+
+<br>
+
+$$
+O(i,j)= \sum_{m=0}^{1}\sum_{n=0}^{1}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
+K = \begin{bmatrix}
+0 &  1\\
+-1 & 0
+\end{bmatrix}
+$$
 
 <br>
 
 ![Roberts Y output](conv_roberts_y.png)  
-<sub>Figure 7 : **Roberts Y** - diagonal edges (↘︎ direction).</sub>
+<sub>Figure 7: **Roberts Y** – diagonal edges (↘︎ direction).</sub>
+
+---
+
+<br>
+
+$$
+O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
+K = \begin{bmatrix}
+-2 & -1 & 0\\
+-1 &  1 & 1\\
+ 0 &  1 & 2
+\end{bmatrix}
+$$
 
 <br>
 
 ![Emboss output](conv_emboss.png)  
-<sub>Figure 8 : **Emboss** - relief effect in a given direction.</sub>
+<sub>Figure 8: **Emboss** – relief effect in a given direction.</sub>
+
+---
+
+<br>
+
+$$
+O(i,j)= \sum_{m=0}^{4}\sum_{n=0}^{4}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
+K = \begin{bmatrix}
+0  & 0  & -1 & 0  & 0\\
+0  & -1 & -2 & -1 & 0\\
+-1 & -2 & 16 & -2 & -1\\
+0  & -1 & -2 & -1 & 0\\
+0  & 0  & -1 & 0  & 0
+\end{bmatrix}
+$$
 
 <br>
 
 ![Laplacian of Gaussian output](conv_log.png)  
-<sub>Figure 9 : **LoG (Laplacian of Gaussian)** - combined smoothing and edge enhancement.</sub>
+<sub>Figure 9: **LoG (Laplacian of Gaussian)** – combined smoothing and edge enhancement.</sub>
 
 <br>
 
