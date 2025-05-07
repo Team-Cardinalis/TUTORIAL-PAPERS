@@ -356,7 +356,7 @@ Deep Learning an MIT Press book
 Sasha MARMAIN
 
 <a href="https://www.linkedin.com/in/sasha-marmain-7a9645294/">
-  <img src="linkedin.png" alt="LinkedIn" width="25">
+  <img src="linkedin.png" alt="LinkedIn" width="13">
 </a>
 
 <br>
@@ -364,6 +364,6 @@ Sasha MARMAIN
 
 Killian OTT
 
-> <a href="https://www.linkedin.com/in/killian-ott/">
-  <img src="linkedin.png" alt="LinkedIn" width="25">
+<a href="https://www.linkedin.com/in/killian-ott/">
+  <img src="linkedin.png" alt="LinkedIn" width="13">
 </a>
