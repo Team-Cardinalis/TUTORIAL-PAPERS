@@ -24,6 +24,6 @@ A collection of technical notes describing key 2D neural network operations.
 ---
 
 - **Logo/**  
-  Project logo assets.
+![Team Cardinalis Logo](Logo/teamcardinalis.png)
 
 ---
