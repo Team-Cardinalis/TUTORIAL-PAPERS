@@ -54,6 +54,17 @@ To illustrate how convolutional filters uncover image structure, we apply three 
 ![Sobel X output](conv_sobel_x.png)  
 <sub>Figure 1: **Sobel X** - vertical edges.</sub>
 
+$$
+O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
+\quad\text{with}\quad
+K = \begin{bmatrix}
+-1 & 0 & 1\\
+-2 & 0 & 2\\
+-1 & 0 & 1
+\end{bmatrix}
+$$
+
+
 <br>
 
 ![Sobel Y output](conv_sobel_y.png)  
@@ -69,32 +80,32 @@ To illustrate how convolutional filters uncover image structure, we apply three 
 <br>
 
 ![Prewitt X output](conv_prewitt_x.png)  
-<sub>Figure 4 : **Prewitt X** – vertical edges.</sub>
+<sub>Figure 4 : **Prewitt X** - vertical edges.</sub>
 
 <br>
 
 ![Prewitt Y output](conv_prewitt_y.png)  
-<sub>Figure 5 : **Prewitt Y** – horizontal edges.</sub>
+<sub>Figure 5 : **Prewitt Y** - horizontal edges.</sub>
 
 <br>
 
 ![Roberts X output](conv_roberts_x.png)  
-<sub>Figure 6 : **Roberts X** – diagonal edges (↗︎ direction).</sub>
+<sub>Figure 6 : **Roberts X** - diagonal edges (↗︎ direction).</sub>
 
 <br>
 
 ![Roberts Y output](conv_roberts_y.png)  
-<sub>Figure 7 : **Roberts Y** – diagonal edges (↘︎ direction).</sub>
+<sub>Figure 7 : **Roberts Y** - diagonal edges (↘︎ direction).</sub>
 
 <br>
 
 ![Emboss output](conv_emboss.png)  
-<sub>Figure 8 : **Emboss** – relief effect in a given direction.</sub>
+<sub>Figure 8 : **Emboss** - relief effect in a given direction.</sub>
 
 <br>
 
 ![Laplacian of Gaussian output](conv_log.png)  
-<sub>Figure 9 : **LoG (Laplacian of Gaussian)** – combined smoothing and edge enhancement.</sub>
+<sub>Figure 9 : **LoG (Laplacian of Gaussian)** - combined smoothing and edge enhancement.</sub>
 
 <br>
 
