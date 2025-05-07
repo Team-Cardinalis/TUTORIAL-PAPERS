@@ -53,7 +53,7 @@ The role of the stride and padding is essential in controlling both the resoluti
 
 <br>
 
-#### VISUAL EXAMPLES
+### VISUAL EXAMPLES
 
 <p align="justify">
 To illustrate how convolutional filters uncover image structure, we apply three edge detectors to the same grayscale input. The Sobel X kernel approximates the horizontal intensity derivative, causing vertical features to stand out. The Sobel Y kernel approximates the vertical derivative, making horizontal transitions more visible. The Laplacian kernel computes the second derivative of intensity and highlights every edge irrespective of orientation. In each example you will see the input image on the left, the kernel visualization in the center, and the resulting feature map on the right.
