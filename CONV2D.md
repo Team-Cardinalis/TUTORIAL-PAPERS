@@ -256,13 +256,19 @@ $$
 
 <br>
 
-<img src="Figures/conv2d/out_dim_calc/output_dimensions.png"
-     alt="Convolution output dimensions"
-     width="400"
-     style="display:block; margin:0;" />
-<sub style="display:block; margin:0; line-height:1;">
-  Figure 8 : <strong>Convolution Output Dimensions</strong> – Output size of a convolution operation as a function of kernel size (k), stride (s), padding (p), and dilation (d).
-</sub>
+<figure style="margin:0; padding:0;">
+  <img
+    src="Figures/conv2d/out_dim_calc/output_dimensions.png"
+    alt="Convolution output dimensions"
+    width="400"
+    style="display:block; margin:0;"
+  />
+  <figcaption
+    style="margin:0; padding:0; font-size:0.9em; line-height:1;"
+  >
+    Figure 8 : <strong>Convolution Output Dimensions</strong> – Output size of a convolution operation as a function of kernel size (k), stride (s), padding (p), and dilation (d).
+  </figcaption>
+</figure>
 
 <br>
 
