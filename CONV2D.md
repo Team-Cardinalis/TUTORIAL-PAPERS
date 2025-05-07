@@ -334,5 +334,5 @@ $$
 
 ## CONTRIBUTORS
 
-<span style="color:darkgray">Sasha MARMAIN</span>  
-<span style="color:darkgray">Killian OTT</span>
+`Sasha MARMAIN`  
+`Killian OTT`
