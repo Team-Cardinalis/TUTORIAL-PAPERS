@@ -24,7 +24,7 @@ A collection of technical notes describing key 2D neural network operations.
 ---
 
 <a href="https://www.teamcardinalis.com/">
-   <img src="Logo/teamcardinalis.png" alt="Team Cardinalis" width="20">
+   <img src="Logo/teamcardinalis.png" alt="Team Cardinalis" width="100">
 </a>
 
 ---
