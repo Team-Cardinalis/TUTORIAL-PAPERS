@@ -20,6 +20,8 @@ Adaptive Max Pooling is used to ensure that the output of a pooling layer has pr
 Unlike fixed pooling, Adaptive Max Pooling computes pooling regions based on the desired output size (H_out, W_out). For each region, the operation outputs:
 </p>
 
+<br>
+
 $$
 O(i,j)= \max_{(m,n) \in R_{ij}} I(m,n)
 $$
@@ -56,7 +58,8 @@ $$
 
 ## SOURCES
 
-PyTorch and Tensorflow documentations for Adaptive Pooling layers.
+PyTorch documentation
+> https://docs.pytorch.org/docs/stable/generated/torch.nn.AdaptiveMaxPool2d.html
 
 <br>
 
