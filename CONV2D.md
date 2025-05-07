@@ -339,14 +339,15 @@ Tensorflow documentation
 CS231n Deep Learning for Computer Vision
 > http://cs231n.github.io/convolutional-networks/
 
+<br>
+
+Dive into Deep Learning
 > https://d2l.ai/chapter_convolutional-neural-networks/conv.html
 
+<br>
+
+Deep Learning an MIT Press book
 > https://www.deeplearningbook.org/
-
-> https://www.pyimagesearch.com/2015/10/05/implementing-sobel-filter-cpp-python/
-
-> https://www.digitalocean.com/community/tutorials/how-to-implement-convolutional-neural-networks-from-scratch-in-python-3
-https://arxiv.org/abs/1701.00279
 
 <br>
 
