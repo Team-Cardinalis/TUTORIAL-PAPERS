@@ -15,6 +15,10 @@ In a second hand, we pursue our dream to enhance even more what AI reach. We asp
 
 ## Table of Contents
 
+### Computer Vision :
+Here are all the different filters of computer vision that our TUTORIAL PAPERS will talk about. Based on many different mathematical equations to refine our data.
+Computer Vision is a field of AI that enables computers and systems to see, interpret, and understand visual informations.
+
 [CONV2D.md](CONV2D.md)  
    Overview of the 2D convolution layer: principles, mathematical formulation, implementation details, and visual examples.
   
