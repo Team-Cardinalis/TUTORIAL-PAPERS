@@ -1,12 +1,16 @@
 ## ABSTRACT
 
+<p align="justify">
 2D convolution underlies convolutional neural network architectures in computer vision. This tutorial, aimed at beginners in deep learning and computer vision, provides a comprehensive presentation from the mathematical foundations of the operation through practical implementation and optimization in PyTorch. We systematically examine key parameters such as stride, padding and dilation and elucidate their effects through annotated code examples and visualizations before and after convolution. Upon completing this tutorial, readers will be able to design and configure their own Conv2D layers and justify hyperparameter choices for use cases ranging from edge detection to image classification.
+</p>
 
 <br>
 
 ## INTRODUCTION
 
+<p align="justify">
 This tutorial paper provides a comprehensive introduction to the Conv2D layer, a core component of Convolutional Neural Networks (CNNs), with a focus on its mathematical foundation, configuration parameters, and role in feature extraction for computer vision tasks.
+</p>
 
 <br>
 
@@ -26,7 +30,9 @@ This tutorial paper provides a comprehensive introduction to the Conv2D layer, a
 
 ## CONVOLUTION OPERATION
 
+<p align="justify">
 In a Convolutional Neural Network, the convolution operation is the fundamental mechanism by which local features are extracted from input data. In this process, a kernel (or filter) of fixed dimensions is systematically applied to the input feature map by moving it across spatial positions. For each location (i,j) in the output feature map, the convolution operation computes a weighted sum of the values in the receptive field of the input. This is achieved by aligning the kernel with a corresponding patch of the input, performing an element-wise multiplication between the kernel weights and the input values, and summing the results.
+</p>
 
 The mathematical formulation of this operation is given by :
 
@@ -41,7 +47,9 @@ $$O(i,j)= \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1}I\bigl(i\,s + m - p,\; j\,s + n - 
 - $s$ is the stride, which dictates the step size for sliding the kernel over the input  
 - $p$ corresponds to the amount of zero-padding added to the input border
 
+<p align="justify">
 The role of the stride and padding is essential in controlling both the resolution of the output feature map and the preservation of spatial information at the edges of the input. This equation encapsulates the local aggregation process, thereby enabling the network to build up complex representations by hierarchically combining simple features detected in the early layers.
+</p>
 
 <br>
 
@@ -129,7 +137,9 @@ $$
 
 ## OUTPUT DIMENSION CALCULATION
 
+<p align="justify">
 In Convolutional Neural Networks, it is crucial to compute the dimensions of the output feature map resulting from the convolution operation. This computation ensures that the network architecture is correctly designed and that the spatial structure of the data is maintained or intentionally altered as needed. The output height and width are determined by four main parameters:
+</p>
 
 <br>
 
@@ -153,7 +163,9 @@ $$
 
 ## MULTI-CHANNEL CONVOLUTION
 
+<p align="justify">
 In multi-channel convolution, each filter is applied to every input channel. The outputs are summed across channels to produce each output feature map. For an input with \(C_{in}\) channels, the operation is given by:
+</p>
 
 <br>
 
@@ -165,7 +177,9 @@ $$
 
 ## BIAS
 
+<p align="justify">
 After convolution, a learnable bias is added to each output channel. This allows the output to be shifted and is computed as:
+</p>
 
 <br>
 
@@ -177,13 +191,17 @@ $$
 
 ## BACKPROPAGATION
 
+<p align="justify">
 Backpropagation computes the gradients of the loss function with respect to each parameter using the chain rule. In convolutional layers, error gradients are propagated by convolving the gradient of the output with rotated filters.
+</p>
 
 <br>
 
 ## GRADIENT
 
+<p align="justify">
 The gradient with respect to the weights is given by:
+</p>
 
 <br>
 
@@ -193,7 +211,9 @@ $$
 
 <br>
 
+<p align="justify">
 The gradient with respect to the bias is computed as:
+</p>
 
 <br>
 
