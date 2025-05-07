@@ -364,11 +364,15 @@ Sasha MARMAIN
 
 Killian OTT
 
-<a href="https://www.linkedin.com/in/killian-ott/">
-  <img src="Logo/linkedin.png" alt="LinkedIn" width="20">
-</a>
-
-
-<a href="https://www.facebook.com/PR0G3T/">
-  <img src="Logo/facebook.png" alt="LinkedIn" width="20">
-</a>
+<ul style="display:flex; gap:10px; list-style:none; padding:0; margin:0;">
+  <li>
+    <a href="https://www.linkedin.com/in/killian-ott/" aria-label="Mon profil LinkedIn">
+      <img src="Logo/linkedin.png" alt="LinkedIn" width="20">
+    </a>
+  </li>
+  <li>
+    <a href="https://www.facebook.com/PR0G3T/" aria-label="Ma page Facebook">
+      <img src="Logo/facebook.png" alt="Facebook" width="20">
+    </a>
+  </li>
+</ul>
