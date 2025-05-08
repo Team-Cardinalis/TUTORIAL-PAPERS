@@ -21,7 +21,6 @@ Computer Vision is a field of AI that enables computers and systems to see, inte
 
 [CONV2D.md](CONV2D.md)  
    Overview of the 2D convolution layer: principles, mathematical formulation, implementation details, and visual examples.
-  
 
 [CONVTRANSPOSE2D.md](CONVTRANSPOSE2D.md)  
    2D transposed convolution (deconvolution): mechanism, applications in generative architectures, and detailed examples.
