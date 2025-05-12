@@ -368,8 +368,3 @@ Killian OTT
 > <a href="https://www.linkedin.com/in/killian-ott/">
 >  <img src="Logo/linkedin.png" alt="LinkedIn" width="20">
 > </a>
-> <br>
-> <br>
-> <a href="https://github.com/PR0G3T">
->  <img src="Logo/github.png" alt="LinkedIn" width="20">
-> </a>
