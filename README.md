@@ -18,7 +18,7 @@ Advances in artificial intelligence and computer vision are driven by a deep und
 
 <br>
 
-## Scope
+## SCOPE
 
 - **Mathematical Foundations:** Detailed derivations and explanations of core operations.
 - **Implementation Details:** Practical guidance using leading deep learning frameworks (e.g., PyTorch, TensorFlow).
@@ -27,7 +27,7 @@ Advances in artificial intelligence and computer vision are driven by a deep und
 
 <br>
 
-## Table of Contents
+## TABLE OF CONTENTS
 
 ### Computer Vision Operations
 
@@ -48,19 +48,19 @@ Advances in artificial intelligence and computer vision are driven by a deep und
 
 <br>
 
-## Contributing
+## CONTRIBUTING
 
 Contributions are welcome. Please ensure that all additions maintain scientific rigor and clarity. For major changes, open an issue to discuss your proposal.
 
 <br>
 
-## License
+## LICENSE
 
 This project is released under an open-access license to promote free and unrestricted dissemination of knowledge.
 
 <br>
 
-## Authors
+## AUTHORS
 
 Killian OTT
 > <a href="https://www.linkedin.com/in/killian-ott/">
