@@ -14,7 +14,7 @@ Our mission is to democratize access to high-quality educational resources in ar
 
 ## MOTIVATION
 
-Advances in artificial intelligence and computer vision are driven by a deep understanding of the mathematical and algorithmic foundations underlying neural network architectures. By elucidating the principles of key 2D operations—such as convolution, pooling, and their adaptive variants—this project seeks to empower students, engineers, and researchers to design, analyze, and optimize modern AI systems.
+Advances in artificial intelligence and computer vision are driven by a deep understanding of the mathematical and algorithmic foundations underlying neural network architectures. By elucidating the principles of key 2D operations such as convolution, pooling, and their adaptive variants—this project seeks to empower students, engineers, and researchers to design, analyze, and optimize modern AI systems.
 
 <br>
 
