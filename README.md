@@ -4,9 +4,7 @@
 
 # TUTORIAL-PAPERS
 
-## Overview
-
-**TUTORIAL-PAPERS** is a curated collection of technical notes and tutorials focused on fundamental 2D neural network operations in computer vision. This repository aims to provide clear, scientifically rigorous explanations of core concepts, mathematical formulations, and practical implementations relevant to deep learning practitioners and researchers.
+Take a deep dive into a curated collection of technical notes and tutorials focused on fundamental 2D neural network operations in computer vision. This repository aims to provide clear, scientifically rigorous explanations of core concepts, mathematical formulations, and practical implementations relevant to deep learning practitioners and researchers.
 
 Our mission is to democratize access to high-quality educational resources in artificial intelligence, with an emphasis on transparency, reproducibility, and scientific accuracy. Each tutorial is dedicated to a specific neural network operation, offering both theoretical insights and hands-on examples.
 
