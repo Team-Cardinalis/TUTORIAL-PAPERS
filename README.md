@@ -2,19 +2,23 @@
    <img src="Logo/teamcardinalis.png" alt="Team Cardinalis" width="100">
 </a>
 
-<div align="justify">
-
 # TUTORIAL-PAPERS
 
+<p align="justify">
 Take a deep dive into a curated collection of technical notes and tutorials focused on fundamental 2D neural network operations in computer vision. This repository aims to provide clear, scientifically rigorous explanations of core concepts, mathematical formulations, and practical implementations relevant to deep learning practitioners and researchers.
+</p>
 
+<p align="justify">
 Our mission is to democratize access to high-quality educational resources in artificial intelligence, with an emphasis on transparency, reproducibility, and scientific accuracy. Each tutorial is dedicated to a specific neural network operation, offering both theoretical insights and hands-on examples.
+</p>
 
 <br>
 
 ## MOTIVATION
 
+<p align="justify">
 Advances in artificial intelligence and computer vision are driven by a deep understanding of the mathematical and algorithmic foundations underlying neural network architectures. By elucidating the principles of key 2D operations such as convolution, pooling, and their adaptive variants—this project seeks to empower students, engineers, and researchers to design, analyze, and optimize modern AI systems.
+</p>
 
 <br>
 
@@ -71,5 +75,3 @@ Sasha MARMAIN
 > <a href="https://www.linkedin.com/in/sasha-marmain-7a9645294/">
 >  <img src="Logo/linkedin.png" alt="LinkedIn" width="20">
 > </a>
-
-</div>

@@ -2,17 +2,19 @@
    <img src="Logo/teamcardinalis.png" alt="Team Cardinalis" width="100">
 </a>
 
-<div align="justify">
-
 ## ABSTRACT
 
+<p align="justify">
 2D convolution underlies convolutional neural network architectures in computer vision. This tutorial, aimed at beginners in deep learning and computer vision, provides a comprehensive presentation from the mathematical foundations of the operation through practical implementation and optimization in PyTorch. We systematically examine key parameters such as stride, padding and dilation and elucidate their effects through annotated code examples and visualizations before and after convolution. Upon completing this tutorial, readers will be able to design and configure their own Conv2D layers and justify hyperparameter choices for use cases ranging from edge detection to image classification.
+</p>
 
 <br>
 
 ## INTRODUCTION
 
+<p align="justify">
 This tutorial paper provides a comprehensive introduction to the Conv2D layer, a core component of Convolutional Neural Networks (CNNs), with a focus on its mathematical foundation, configuration parameters, and role in feature extraction for computer vision tasks.
+</p>
 
 <br>
 
@@ -361,5 +363,3 @@ Sasha MARMAIN
 > <a href="https://www.linkedin.com/in/sasha-marmain-7a9645294/">
 >  <img src="Logo/linkedin.png" alt="LinkedIn" width="20">
 > </a>
-
-</div>
