@@ -38,299 +38,197 @@ This tutorial paper offers a thorough introduction to Data augmentation, a funda
 
 <br>
 
-## CONVOLUTION OPERATION
+## DATA AUGMENTATION OPERATION
 
 <p align="justify">
-In a Convolutional Neural Network, the convolution operation is the fundamental mechanism by which local features are extracted from input data. In this process, a kernel (or filter) of fixed dimensions is systematically applied to the input feature map by moving it across spatial positions. For each location (i,j) in the output feature map, the convolution operation computes a weighted sum of the values in the receptive field of the input. This is achieved by aligning the kernel with a corresponding patch of the input, performing an element-wise multiplication between the kernel weights and the input values, and summing the results.
+In machine learning pipelines, Data augmentation is a fundamental technique used to artificially expand the training dataset by generating modified versions of existing data samples. This is achieved by applying a set of transformations—such as rotation, scaling, flipping, cropping, or noise injection—to the original inputs. For each training instance, these transformations alter certain spatial, color, or statistical properties while preserving the core semantics of the data. By systematically introducing such variations, data augmentation helps the model generalize better to unseen data, reduces overfitting, and improves robustness to real-world variations.
 </p>
 
-The mathematical formulation of this operation is given by :
+## Here is the Maths
 
-<br>
+## 1. Normalization
+Rescales pixel values to a standard range, typically [0, 1] or mean-centered.
 
-$$O(i,j)= \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)$$
-
-<br>
-
-- $I$ denotes the input feature map
-- $K$ represents the convolution kernel of dimensions $K_h \times K_w$
-- $s$ is the stride, which dictates the step size for sliding the kernel over the input
-- $p$ corresponds to the amount of zero-padding added to the input border
-
-<p align="justify">
-The role of the stride and padding is essential in controlling both the resolution of the output feature map and the preservation of spatial information at the edges of the input. This equation encapsulates the local aggregation process, thereby enabling the network to build up complex representations by hierarchically combining simple features detected in the early layers.
-</p>
-
-<br>
-
-### VISUAL EXAMPLES
-
-<p align="justify">
-To illustrate how convolutional filters uncover image structure, we apply three edge detectors to the same grayscale input. The Sobel X kernel approximates the horizontal intensity derivative, causing vertical features to stand out. The Sobel Y kernel approximates the vertical derivative, making horizontal transitions more visible. The Laplacian kernel computes the second derivative of intensity and highlights every edge irrespective of orientation. In each example you will see the input image on the left, the kernel visualization in the center, and the resulting feature map on the right.
-</p>
-
-<br>
+**Equation:**
 
 $$
-O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
-\quad\text{with}\quad
-K = \begin{bmatrix}
--1 & 0 & 1\\
--2 & 0 & 2\\
--1 & 0 & 1
-\end{bmatrix}
+x' = \frac{x - \mu}{\sigma}
 $$
 
-<br>
-
-![Sobel X output](Figures/conv2d/conv/conv_sobel_x.png)  
-<sub>Figure 1: **Sobel X** – vertical edges.</sub>
+Where:
+- \( x \) is the original pixel value.
+- \( \mu \) is the dataset mean.
+- \( \sigma \) is the standard deviation.
 
 ---
 
-<br>
+## 2. Noise Injection
+Adds random noise to the input to improve robustness.
+
+**Equation:**
 
 $$
-O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
-\quad\text{with}\quad
-K = \begin{bmatrix}
--1 & -2 & -1\\
-0  &  0 &  0\\
-1  &  2 &  1
-\end{bmatrix}
+x' = x + \epsilon, \quad \epsilon \sim \mathcal{N}(0, \sigma^2)
 $$
-
-<br>
-
-![Sobel Y output](Figures/conv2d/conv/conv_sobel_y.png)  
-<sub>Figure 2: **Sobel Y** – horizontal edges.</sub>
 
 ---
 
-<br>
+## 3. Padding
+Adds extra pixels around the image, usually with zeros or reflected edges.
+
+**Operation (Conceptual):**
 
 $$
-O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
-\quad\text{with}\quad
-K = \begin{bmatrix}
-0 & 1 & 0\\
-1 & -4 & 1\\
-0 & 1 & 0
-\end{bmatrix}
+x' = \text{pad}(x, p)
 $$
 
-<br>
-
-![Laplacian output](Figures/conv2d/conv/conv_laplacian.png)  
-<sub>Figure 3: **Laplacian** – all edges.</sub>
+Where:
+- \( p \) is the number of pixels to pad on each side.
 
 ---
 
-<br>
+## 4. Crop
+Removes parts of the image, typically from edges.
+
+**Operation (Conceptual):**
 
 $$
-O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
-\quad\text{with}\quad
-K = \begin{bmatrix}
--1 &  0 & 1\\
--1 &  0 & 1\\
--1 &  0 & 1
-\end{bmatrix}
+x' = x[i:i+h,\ j:j+w]
 $$
 
-<br>
-
-![Prewitt X output](Figures/conv2d/conv/conv_prewitt_x.png)  
-<sub>Figure 4: **Prewitt X** – vertical edges.</sub>
+Where:
+- \( h, w \) are the crop height and width.
+- \( i, j \) are the starting row and column.
 
 ---
 
-<br>
+## 5. Color Jitter
+Randomly changes brightness, contrast, saturation, and hue.
+
+**Equation (general form):**
 
 $$
-O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
-\quad\text{with}\quad
-K = \begin{bmatrix}
--1 & -1 & -1\\
- 0 &  0 &  0\\
- 1 &  1 &  1
-\end{bmatrix}
+x' = \alpha \cdot x + \beta
 $$
 
-<br>
-
-![Prewitt Y output](Figures/conv2d/conv/conv_prewitt_y.png)  
-<sub>Figure 5: **Prewitt Y** – horizontal edges.</sub>
+Where:
+- \( \alpha \) controls contrast.
+- \( \beta \) shifts brightness.
 
 ---
 
-<br>
+## 6. Brightness
+Adjusts image intensity.
+
+**Equation:**
 
 $$
-O(i,j)= \sum_{m=0}^{1}\sum_{n=0}^{1}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
-\quad\text{with}\quad
-K = \begin{bmatrix}
-1 &  0\\
-0 & -1
-\end{bmatrix}
+x' = x + \Delta b
 $$
 
-<br>
-
-![Roberts X output](Figures/conv2d/conv/conv_roberts_x.png)  
-<sub>Figure 6: **Roberts X** – diagonal edges (↗︎ direction).</sub>
+Where:
+- \( \Delta b \) is a brightness offset.
 
 ---
 
-<br>
+## 7. Shear
+Applies a slant to the image shape.
+
+**Equation (Shear in x-direction):**
 
 $$
-O(i,j)= \sum_{m=0}^{1}\sum_{n=0}^{1}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
-\quad\text{with}\quad
-K = \begin{bmatrix}
-0 &  1\\
--1 & 0
+\begin{bmatrix}
+x' \\
+y'
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & \lambda \\
+0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
 \end{bmatrix}
 $$
 
-<br>
-
-![Roberts Y output](Figures/conv2d/conv/conv_roberts_y.png)  
-<sub>Figure 7: **Roberts Y** – diagonal edges (↘︎ direction).</sub>
+Where:
+- \( \lambda \) is the shear factor.
 
 ---
 
-<br>
+## 8. Zoom (Scaling)
+Scales the image up or down.
+
+**Equation:**
 
 $$
-O(i,j)= \sum_{m=0}^{2}\sum_{n=0}^{2}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
-\quad\text{with}\quad
-K = \begin{bmatrix}
--2 & -1 & 0\\
--1 &  1 & 1\\
- 0 &  1 & 2
-\end{bmatrix}
+x' = s_x \cdot x,\quad y' = s_y \cdot y
 $$
 
-<br>
-
-![Emboss output](Figures/conv2d/conv/conv_emboss.png)  
-<sub>Figure 8: **Emboss** – relief effect in a given direction.</sub>
+Where:
+- \( s_x, s_y \) are scale factors along x and y axes.
 
 ---
 
-<br>
+## 9. Translation
+Shifts the image in space.
+
+**Equation:**
 
 $$
-O(i,j)= \sum_{m=0}^{4}\sum_{n=0}^{4}I\bigl(i\,s + m - p,\; j\,s + n - p\bigr)\;K(m,n)
-\quad\text{with}\quad
-K = \begin{bmatrix}
-0  & 0  & -1 & 0  & 0\\
-0  & -1 & -2 & -1 & 0\\
--1 & -2 & 16 & -2 & -1\\
-0  & -1 & -2 & -1 & 0\\
-0  & 0  & -1 & 0  & 0
+x' = x + t_x,\quad y' = y + t_y
+$$
+
+Where:
+- \( t_x, t_y \) are translation values.
+
+---
+
+## 10. Rotation
+Rotates the image around the center.
+
+**Equation:**
+
+$$
+\begin{bmatrix}
+x' \\
+y'
+\end{bmatrix}
+=
+\begin{bmatrix}
+\cos(\theta) & -\sin(\theta) \\
+\sin(\theta) & \cos(\theta)
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
 \end{bmatrix}
 $$
 
-<br>
+Where:
+- \( \theta \) is the rotation angle.
 
-![Laplacian of Gaussian output](Figures/conv2d/conv/conv_log.png)  
-<sub>Figure 9: **LoG (Laplacian of Gaussian)** – combined smoothing and edge enhancement.</sub>
+---
 
-<br>
+## 11. Flip
+Reverses the image along a specific axis.
 
-## OUTPUT DIMENSION CALCULATION
-
-<p align="justify">
-In Convolutional Neural Networks, it is crucial to compute the dimensions of the output feature map resulting from the convolution operation. This computation ensures that the network architecture is correctly designed and that the spatial structure of the data is maintained or intentionally altered as needed. The output height and width are determined by four main parameters:
-</p>
-
-<br>
+**Horizontal Flip:**
 
 $$
-H_{out} = \frac{H_{in} + 2p - d \cdot (K_h - 1) - 1}{s} + 1
-$$  
-$$
-W_{out} = \frac{W_{in} + 2p - d \cdot (K_w - 1) - 1}{s} + 1
+x' = W - x,\quad y' = y
 $$
 
-<br>
-
-- $H_{in}, W_{in}$ denote the height and width of the input feature map  
-- $H_{out}, W_{out}$ denote the height and width of the output feature map  
-- $K_h, K_w$ represent the height and width of the kernel, respectively  
-- $s$ is the stride, which dictates the step size for sliding the kernel over the input  
-- $p$ corresponds to the amount of zero-padding added to the input border  
-- $d$ is the dilation, which specifies the spacing between elements of the kernel
-
-<br>
-
-<img src="Figures/conv2d/out_dim_calc/output_dimensions.png" alt="Convolution output dimensions" width="400"/>  
-<sub>Figure 8: <strong>Convolution Output Dimensions</strong> – Output size of a convolution operation as a function of kernel size (k), stride (s), padding (p), and dilation (d).</sub>
-
-<br>
-<br>
-
-## MULTI-CHANNEL CONVOLUTION
-
-<p align="justify">
-In multi-channel convolution, each filter is applied to every input channel. The outputs are summed across channels to produce each output feature map. For an input with \(C_{in}\) channels, the operation is given by:
-</p>
-
-<br>
+**Vertical Flip:**
 
 $$
-O(i,j) = \sum_{c=1}^{C_{in}} \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1} I_c(i\,s + m - p,\; j\,s + n - p)\;K_c(m,n)
+x' = x,\quad y' = H - y
 $$
 
-<br>
-
-## BIAS
-
-<p align="justify">
-After convolution, a learnable bias is added to each output channel. This allows the output to be shifted and is computed as:
-</p>
-
-<br>
-
-$$
-O(i,j) = \left( \sum_{c=1}^{C_{in}} \sum_{m=0}^{K_h-1}\sum_{n=0}^{K_w-1} I_c(i\,s + m - p,\; j\,s + n - p)\;K_c(m,n) \right) + b
-$$
-
-<br>
-
-## BACKPROPAGATION
-
-<p align="justify">
-Backpropagation computes the gradients of the loss function with respect to each parameter using the chain rule. In convolutional layers, error gradients are propagated by convolving the gradient of the output with rotated filters.
-</p>
-
-<br>
-
-## GRADIENT
-
-<p align="justify">
-The gradient with respect to the weights is given by:
-</p>
-
-<br>
-
-$$
-\frac{\partial L}{\partial K_c(m,n)} = \sum_{i,j} \frac{\partial L}{\partial O(i,j)} \cdot I_c(i\,s + m - p,\; j\,s + n - p)
-$$
-
-<br>
-
-<p align="justify">
-The gradient with respect to the bias is computed as:
-</p>
-
-<br>
-
-$$
-\frac{\partial L}{\partial b} = \sum_{i,j} \frac{\partial L}{\partial O(i,j)}
-$$
+Where:
+- \( W \) is the image width.
+- \( H \) is the image height.   
 
 <br>
 
