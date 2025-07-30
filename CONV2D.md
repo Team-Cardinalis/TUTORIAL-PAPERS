@@ -2,7 +2,7 @@
    <img src="Logo/teamcardinalis.png" alt="Team Cardinalis" width="100">
 </a>
 
-# Understanding 2D Convolution: A Comprehensive Guide
+# 2D Convolution
 
 ## Abstract
 
