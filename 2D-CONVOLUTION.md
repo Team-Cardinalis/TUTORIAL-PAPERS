@@ -16,6 +16,7 @@ This tutorial is a rigorous and practical guide to 2D convolution, the core buil
 4. [Output Shapes, Parameters, FLOPs](#output-shapes-parameters-flops)
 5. [Receptive Field](#receptive-field)
 6. [PyTorch Essentials](#pytorch-essentials)
+7. [Reproducibility](#reproducibility)
 7. [Visual Examples](#visual-examples)
 8. [Best Practices and Pitfalls](#best-practices-and-pitfalls)
 9. [References](#references)
@@ -111,6 +112,26 @@ img = torch.randn(1, 1, 128, 128)
 edges = conv_x(img)
 print(edges.shape)
 ```
+
+## Reproducibility
+
+To regenerate all figures used in this tutorial:
+
+1. Install dependencies
+
+```bash
+pip install -r figures/conv2d/requirements.txt
+```
+
+2. Run the figure generation script
+
+```bash
+python figures/conv2d/conv2d_figures.py --output-dir figures/conv2d/outputs
+```
+
+Notes:
+- Default input image is `figures/sample.png`. You can override with `--input-image <path>`.
+- All generated images are saved under `figures/conv2d/outputs/`.
 
 ## Visual Examples
 

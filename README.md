@@ -1,5 +1,5 @@
 <a href="https://www.teamcardinalis.com/">
-   <img src="Logo/teamcardinalis.png" alt="Team Cardinalis" width="100">
+   <img src="logo/teamcardinalis.png" alt="Team Cardinalis" width="100">
 </a>
 
 # TUTORIAL-PAPERS
@@ -35,20 +35,8 @@ Advances in artificial intelligence and computer vision are driven by a deep und
 
 ### Computer Vision Operations
 
-- [CONV2D.md](CONV2D.md)  
-  *2D Convolution*: Principles, mathematical formulation, implementation, and visual examples.
-
-- [CONVTRANSPOSE2D.md](CONVTRANSPOSE2D.md)  
-  *2D Transposed Convolution (Deconvolution)*: Mechanism, applications in generative models, and detailed examples.
-
-- [AVGPOOL2D.md](AVGPOOL2D.md)  
-  *2D Average Pooling*: Concept, equations, effects on feature maps, and typical use cases.
-
-- [ADAPTIVEAVGPOOL2D.md](ADAPTIVEAVGPOOL2D.md)  
-  *2D Adaptive Average Pooling*: Dynamic output sizing, comparison with fixed-size pooling, and practical examples.
-
-- [ADAPTIVEMAXPOOL2D.md](ADAPTIVEMAXPOOL2D.md)  
-  *2D Adaptive Max Pooling*: Principle of adaptive maximum selection, differences from classic max pooling, and standard implementations.
+ - [2D-CONVOLUTION.md](2D-CONVOLUTION.md)  
+   *2D Convolution*: Intuition, rigorous math (output shapes, receptive fields, parameters, FLOPs), PyTorch examples, and visual demonstrations. Figures are reproducible via `figures/conv2d/conv2d_figures.py`.
 
 <br>
 
@@ -68,10 +56,10 @@ This project is released under an open-access license to promote free and unrest
 
 Killian OTT
 > <a href="https://www.linkedin.com/in/killian-ott/">
->  <img src="Logo/linkedin.png" alt="LinkedIn" width="20">
+>  <img src="logo/linkedin.png" alt="LinkedIn" width="20">
 > </a>
 
 Sasha MARMAIN
 > <a href="https://www.linkedin.com/in/sasha-marmain-7a9645294/">
->  <img src="Logo/linkedin.png" alt="LinkedIn" width="20">
+>  <img src="logo/linkedin.png" alt="LinkedIn" width="20">
 > </a>
